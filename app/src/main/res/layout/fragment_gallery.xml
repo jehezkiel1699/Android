@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment"
+    android:layout_margin="16dp">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/btnToAddQuotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:src="@drawable/icon_add"
+        app:borderWidth="0dp"
+        app:fabSize="normal"
+        app:maxImageSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Quotes Islami"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_light"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="24dp"
+        android:hint="Search..."
+        android:id="@+id/txtSearch"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerQuotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSearch"
+        android:layout_marginTop="32dp" />
+</RelativeLayout>
